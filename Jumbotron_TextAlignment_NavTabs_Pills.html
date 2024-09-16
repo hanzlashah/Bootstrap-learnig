@@ -27,6 +27,33 @@
             padding-left: 0px;
             padding-right: 0px;
         }
+
+        .dropdown-menu a.dropdown-item {
+            border: none;
+            /* background-color: pink; */
+            border-radius: 0px;
+        }
+
+        .dropdown-menu a.dropdown-item:hover {
+            color: blue;
+            background-color: rgb(231, 229, 229) !important;
+            cursor: pointer;
+            /* border-right: 1px solid rgb(94, 93, 93) !important; */
+            border-right: 1px solid blue !important;
+        }
+
+        .dropdown-menu {
+            padding: 0px;
+        }
+
+        .myMenue li a.nav-link.active {
+            color: rgb(255, 145, 0);
+        }
+
+        /* .myMenue li a.nav-link:hover {
+            color: white;
+            background-color: black;
+        } */
     </style>
 
 
@@ -189,6 +216,43 @@
 
     </div>
 
+
+    <!-- Example single danger button -->
+    <div class="btn-group">
+        <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Action
+        </button>
+        <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li>
+                <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Separated link</a></li>
+        </ul>
+    </div>
+
+
+    <ul class="nav nav-tabs myMenue">
+        <li class=" nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link dropdown-toggle dropdown" data-bs-toggle="dropdown" href="#">Gallery</a>
+
+            <!-- <ol class="dropdown-menu">
+                <li><a href="" class="dropdown-item">item-1</a></li>
+                <li><a href="" class="dropdown-item">item-2</a></li>
+                <li><a href="" class="dropdown-item">item-3</a></li>
+            </ol> -->
+            <div class="dropdown-menu">
+                <a href="#" class="dropdown-item">item-1</a>
+                <a href="#" class="dropdown-item">item-2</a>
+                <a href="#" class="dropdown-item">item-3</a>
+            </div>
+
+        </li>
+        <li class=" nav-item"><a class="nav-link" href="#">Contact</a>
+        </li>
+    </ul>
     <script>
         var firstTabEl = document.querySelector('#myTab li:last-child a')
         var firstTab = new bootstrap.Tab(firstTabEl)
