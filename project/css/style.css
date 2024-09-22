@@ -47,10 +47,10 @@ html {
     width: 100px;
     height: 100px;
     border-radius: 100%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 5%;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    -ms-border-radius: 100%;
+    -o-border-radius: 100%;
     border: 3px solid #fff;
     box-shadow: 0px 0px 5px grey;
     margin-bottom: 15px;
@@ -66,3 +66,8 @@ html {
 
 /* all heading of section has same same font family
 all paragraph of each section has same font family */
+
+a.nav-link.active {
+    background-color: black;
+    color: white !important;
+}
